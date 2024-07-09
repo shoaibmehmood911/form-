@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <section>
+        <form class="fForm" action="">
+            <img src="Assets/Vector.png" alt="">
+            <img src="Assets/vector3.png" alt="">
+            <h1>Reset Password</h1>
+            <p class="text-center fs-5" id="submit-check"></p>
+            <table>
+                <tr>
+                    <td>
+                        <label for="">Enter Old Password</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="password" id="oPassword" placeholder="Enter Old Password"
+                            title="Enter Old Password" required minlength="8">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="oPassword-check"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Enter New Password</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="password" id="nPassword" placeholder="Enter New Password"
+                            title="Enter New Password" required minlength="8">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="nPassword-check"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Confirm New Password</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="password" id="C_Password" placeholder="Confirm New Password"
+                            title="Confirm New Password" required minlength="8"></td>
+                </tr>
+                <tr>
+                    <td id="C_Password-check"></td>
+                </tr>
+
+
+            </table>
+            <div class="buttons d-flex mt-0 gap-2">
+                <a href=""><button id="reset" onclick="submitBtn(event)" type="submit">Reset Password</button></a>
+                <button id="rst" type="button" onclick="resetBtn()">Reset</button>
+                <a href="index.html"><button id="back" type="button">Back</button></a>
+            </div>
+
+
+        </form>
+    </section>
+</body>
+
+</html>
